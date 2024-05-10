@@ -91,7 +91,7 @@ header nav a:hover {
 
 @media screen and (max-width: 558px) {
   .redes {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: flex;
@@ -99,6 +99,7 @@ header nav a:hover {
     flex-direction: row;
     padding: 0.8em;
     gap: 15px;
+    z-index: 999;
   }
 
   .redes img {
@@ -111,6 +112,7 @@ header nav a:hover {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    position: fixed;
   }
 
   header nav a {
@@ -125,6 +127,11 @@ header nav a:hover {
 
   .box {
     width: 100%;
-    padding: 15px 0;
+    padding: 35px 0;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .itens img {
+    display: none;
   }
 }
